@@ -6298,7 +6298,7 @@ small a:hover {
     width: 50%;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .card:hover {
@@ -6313,168 +6313,379 @@ small a:hover {
     color: #e0e0e0;
     margin: 0;
 }
- .tech-watch {
-                padding: 80px 0;
-                background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 153, 153, 0.05) 100%);
-                margin-bottom: 50px;
-            }
 
-            .tech-watch__title {
-                text-align: center;
-                margin-bottom: 60px;
-            }
+.tech-watch {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 153, 153, 0.05) 100%);
+    margin-bottom: 50px;
+}
 
-            .tech-watch__intro {
-                text-align: center;
-                max-width: 600px;
-                margin: 0 auto 60px;
-                font-size: 16px;
-                color: #bbb;
-                line-height: 1.6;
-            }
+.tech-watch__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
-            .tech-watch__grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 40px;
-                margin-bottom: 80px;
-            }
+.tech-watch__intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.6;
+}
 
-            .tech-watch__card {
-                padding: 40px 30px;
-                border: 2px solid rgba(0, 255, 255, 0.2);
-                border-radius: 12px;
-                text-align: center;
-                transition: all 0.3s ease;
-                background: rgba(0, 0, 0, 0.3);
-            }
+.tech-watch__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
 
-            .tech-watch__card:hover {
-                border-color: #00ffff;
-                box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
-                transform: translateY(-10px);
-            }
+.tech-watch__card {
+    padding: 40px 30px;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
 
-            .tech-watch__card-icon {
-                margin-bottom: 20px;
-                display: flex;
-                justify-content: center;
-            }
+.tech-watch__card:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
 
-            .tech-watch__card h3 {
-                color: #fff;
-                font-size: 20px;
-                font-weight: 600;
-                margin-bottom: 15px;
-            }
+.tech-watch__card-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-            .tech-watch__card p {
-                color: #aaa;
-                font-size: 14px;
-                line-height: 1.6;
-            }
+.tech-watch__card h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 
-            .tech-watch__alerts {
-                background: rgba(0, 0, 0, 0.5);
-                padding: 50px 40px;
-                border-radius: 12px;
-                border: 2px solid rgba(0, 255, 255, 0.1);
-            }
+.tech-watch__card p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
-            .tech-watch__alerts h3 {
-                color: #fff;
-                font-size: 24px;
-                font-weight: 600;
-                margin-bottom: 30px;
-                text-align: center;
-            }
+.tech-watch__alerts {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 40px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 255, 255, 0.1);
+}
 
-            .tech-watch__alerts-list {
-                display: grid;
-                gap: 20px;
-            }
+.tech-watch__alerts h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
-            .tech-watch__alert-item {
-                padding: 20px;
-                background: rgba(0, 255, 255, 0.05);
-                border-left: 4px solid #00ffff;
-                border-radius: 6px;
-                transition: all 0.3s ease;
-                margin-bottom: 10px;
-            }
+.tech-watch__alerts-list {
+    display: grid;
+    gap: 20px;
+}
+
+.tech-watch__alert-item {
+    padding: 20px;
+    background: rgba(0, 255, 255, 0.05);
+    border-left: 4px solid #00ffff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
 
 
-            .tech-watch__alert-item h4 {
-                color: #00ffff;
-                font-size: 16px;
-                font-weight: 600;
-                margin-bottom: 10px;
-            }
+.tech-watch__alert-item h4 {
+    color: #00ffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-            .tech-watch__alert-item p {
-                color: #bbb;
-                font-size: 14px;
-                margin-bottom: 12px;
-                line-height: 1.5;
-            }
+.tech-watch__alert-item p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
 
-            .tech-watch__alert-item a {
-                color: #00ffff;
-                font-size: 13px;
-                text-decoration: none;
-                font-weight: 600;
-                transition: color 0.3s ease;
-            }
+.tech-watch__alert-item a {
+    color: #00ffff;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
 
-            .tech-watch__alert-item .alert-date {
-                padding: 0;
-            }
+.tech-watch__alert-item .alert-date {
+    padding: 0;
+}
 
-            .tech-watch__alert-item a:hover {
-                color: #00cccc;
-            }
+.tech-watch__alert-item a:hover {
+    color: #00cccc;
+}
 
-            .alert-date {
-                display: block;
-                color: #777;
-                font-size: 12px;
-                margin-top: 10px;
-            }
+.alert-date {
+    display: block;
+    color: #777;
+    font-size: 12px;
+    margin-top: 10px;
+}
 
-            @media (max-width: 768px) {
-                .tech-watch {
-                    padding: 50px 0;
-                }
+@media (max-width: 768px) {
+    .tech-watch {
+        padding: 50px 0;
+    }
 
-                .tech-watch__grid {
-                    grid-template-columns: 1fr;
-                    gap: 20px;
-                }
+    .tech-watch__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-                .tech-watch__alerts {
-                    padding: 30px 20px;
-                }
-            }
+    .tech-watch__alerts {
+        padding: 30px 20px;
+    }
+}
 
-            /* New styles for alert items */
-            .alert-item {
-                padding: 15px;
-                background: rgba(255, 255, 255, 0.1);
-                border-radius: 8px;
-                transition: background 0.3s ease;
-            }
+/* New styles for alert items */
+.alert-item {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
 
-            .alert-item:hover {
-                background: rgba(255, 255, 255, 0.2);
-            }
+.alert-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
 
-            .alert-item a {
-                color: #00ffff;
-                font-weight: bold;
-                text-decoration: underline;
-            }
+.alert-item a {
+    color: #00ffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
-            .alert-item p {
-                margin: 5px 0;
-                color: #ccc;
-            }
+.alert-item p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.timeline__toggle {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timeline__toggle-btn {
+    padding: 12px 30px;
+    border: 2px solid #00ffff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.timeline__toggle-btn:hover {
+    background: linear-gradient(135deg, #00ffff 0%, #009999 100%);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.timeline__toggle-btn--active {
+    background: linear-gradient(135deg, #00ffff 0%, #009999 100%);
+    color: #000;
+}
+
+.skills-modern {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-modern__title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #00ffff 0%, #009999 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skills-modern__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-modern__card {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 153, 153, 0.05) 100%);
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #00ffff 0%, #009999 100%) 1;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-modern__card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.skills-modern__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+    border-image: linear-gradient(135deg, #00ffff 0%, #00ffff 100%) 1;
+}
+
+.skills-modern__card:hover::before {
+    opacity: 1;
+}
+
+.skills-modern__card-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 153, 153, 0.1) 100%);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skills-modern__card:hover .skills-modern__card-icon {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.2) 0%, rgba(0, 153, 153, 0.2) 100%);
+    transform: rotate(10deg) scale(1.1);
+}
+
+.skills-modern__card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00ffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-modern__card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-modern__card-list li {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin: 8px 0;
+    padding: 6px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.skills-modern__card:hover .skills-modern__card-list li {
+    color: #00ffff;
+    padding-left: 10px;
+}
+
+.skills-modern__card-list li::before {
+    content: '▸';
+    color: #00ffff;
+    margin-right: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skills-modern__card:hover .skills-modern__card-list li::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .skills-modern__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .skills-modern__title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .skills-modern__card {
+        padding: 25px 15px;
+    }
+}
+
+.skills-summary {
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+    margin: 20px 0;
+}
+
+.skills-summary__title {
+    color: #00bcd4;
+    font-size: 26px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills-summary__description {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.skills-summary__btn {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.skills-summary__btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}

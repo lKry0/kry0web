@@ -371,7 +371,8 @@
                                 <span class="fr">Lycee Mihail Sadoveanu ( Modlavie ) </span>
                             </p>
                             <p class="timeline__content-description" id="content">
-                                <span class="fr">Introduction generale dans le develeopement web dans le cadre des cours optionels</span>
+                                <span class="fr">Introduction generale dans le develeopement web dans le cadre des cours
+                                    optionels</span>
                             </p>
                         </div>
                     </div>
@@ -467,7 +468,8 @@
                                 <span class="fr">Full Stack Development</span>
                             </p>
                             <p class="timeline__content-description" id="content">
-                                <span class="fr">Implication dans différents projets incluant frontend et backend sur des plateformes freelance (Upwork, Fiverr ...)</span>
+                                <span class="fr">Implication dans différents projets incluant frontend et backend sur
+                                    des plateformes freelance (Upwork, Fiverr ...)</span>
                             </p>
                         </div>
                     </div>
@@ -489,38 +491,6 @@
                 </div>
             </div>
 
-            <style>
-                .timeline__toggle {
-                    display: flex;
-                    gap: 20px;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-
-                .timeline__toggle-btn {
-                    padding: 12px 30px;
-                    border: 2px solid #00ffff;
-                    background-color: transparent;
-                    color: #fff;
-                    font-size: 16px;
-                    font-weight: 600;
-                    cursor: pointer;
-                    border-radius: 8px;
-                    transition: all 0.3s ease;
-                }
-
-                .timeline__toggle-btn:hover {
-                    background: linear-gradient(135deg, #00ffff 0%, #009999 100%);
-                    color: #000;
-                    transform: translateY(-2px);
-                }
-
-                .timeline__toggle-btn--active {
-                    background: linear-gradient(135deg, #00ffff 0%, #009999 100%);
-                    color: #000;
-                }
-            </style>
-
             <script>
                 document.querySelectorAll('.timeline__toggle-btn').forEach(btn => {
                     btn.addEventListener('click', function () {
@@ -541,6 +511,22 @@
                     });
                 });
             </script>
+        </section>
+
+                <section class="skills-summary">
+            <div class="container">
+                <h2 class="skills-summary__title section__title wow fadeInUp" id="content">
+                    <span class="fr">Synthèse de mes Compétences</span>
+                </h2>
+                <p class="skills-summary__description wow fadeInUp" id="content">
+                    <span class="fr">Cliquez sur le bouton ci-dessous pour télécharger mon tableau de synthèse de
+                        compétences.</span>
+                </p>
+                <button class="skills-summary__btn wow fadeInUp" id="content"
+                    onclick="window.open('path/to/your/skills-summary.pdf', '_blank')">
+                    <span class="fr">Ouvrir le tableau</span>
+                </button>
+            </div>
         </section>
 
 
@@ -623,9 +609,101 @@
 
                 </div>
         </section>
+        <section class="skills-modern">
+            <div class="container">
+                <h2 class="skills-modern__title section__title wow fadeInUp" id="content">
+                    <span class="fr">Compétences Techniques</span>
+                </h2>
 
+                <div class="skills-modern__grid">
+                    <!-- Frontend -->
+                    <div class="skills-modern__card wow fadeInUp">
+                        <div class="skills-modern__card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                fill="none">
+                                <rect x="8" y="6" width="32" height="36" rx="2" stroke="#00ffff" stroke-width="2" />
+                                <line x1="8" y1="14" x2="40" y2="14" stroke="#00ffff" stroke-width="2" />
+                                <circle cx="12" cy="10" r="1.5" fill="#00ffff" />
+                                <circle cx="16" cy="10" r="1.5" fill="#00ffff" />
+                                <circle cx="20" cy="10" r="1.5" fill="#00ffff" />
+                            </svg>
+                        </div>
+                        <h3 class="skills-modern__card-title" id="content">
+                            <span class="fr">Frontend</span>
+                        </h3>
+                        <ul class="skills-modern__card-list">
+                            <li id="content"><span class="fr">HTML5</span></li>
+                            <li id="content"><span class="fr">CSS3 & SCSS, SASS</span></li>
+                            <li id="content"><span class="fr">JavaScript, Jquery</span></li>
+                            <li id="content"><span class="fr">Bootstrap</span></li>
+                        </ul>
+                    </div>
 
+                    <!-- Backend -->
+                    <div class="skills-modern__card wow fadeInUp">
+                        <div class="skills-modern__card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                fill="none">
+                                <path d="M12 8L24 16L36 8M12 24L24 32L36 24M12 40L24 48L36 40" stroke="#00ffff"
+                                    stroke-width="2" stroke-linejoin="round" />
+                                <circle cx="24" cy="24" r="3" fill="#00ffff" />
+                            </svg>
+                        </div>
+                        <h3 class="skills-modern__card-title" id="content">
+                            <span class="fr">Backend</span>
+                        </h3>
+                        <ul class="skills-modern__card-list">
+                            <li id="content"><span class="fr">PHP</span></li>
+                            <li id="content"><span class="fr">Node.js</span></li>
+                            <li id="content"><span class="fr">MySQL</span></li>
+                            <li id="content"><span class="fr">MongoDB</span></li>
+                        </ul>
+                    </div>
 
+                    <!-- Design -->
+                    <div class="skills-modern__card wow fadeInUp">
+                        <div class="skills-modern__card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                fill="none">
+                                <circle cx="24" cy="24" r="16" stroke="#00ffff" stroke-width="2" />
+                                <circle cx="24" cy="24" r="10" stroke="#00ffff" stroke-width="2" />
+                                <circle cx="24" cy="24" r="4" fill="#00ffff" />
+                            </svg>
+                        </div>
+                        <h3 class="skills-modern__card-title" id="content">
+                            <span class="fr">Design</span>
+                        </h3>
+                        <ul class="skills-modern__card-list">
+                            <li id="content"><span class="fr">Figma</span></li>
+                            <li id="content"><span class="fr">UI/UX</span></li>
+                            <li id="content"><span class="fr">Responsive</span></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-modern__card wow fadeInUp">
+                        <div class="skills-modern__card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                fill="none">
+                                <path d="M8 24H40M24 8V40M12 16L36 32M36 16L12 32" stroke="#00ffff" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="skills-modern__card-title" id="content">
+                            <span class="fr">Outils</span>
+                        </h3>
+                        <ul class="skills-modern__card-list">
+                            <li id="content"><span class="fr">Git (+lab / +hub )</span></li>
+                            <li id="content"><span class="fr">VS Code</span></li>
+                            <li id="content"><span class="fr">WordPress</span></li>
+                            <li id="content"><span class="fr">Gulp</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <div class="container">
@@ -656,57 +734,7 @@
                     </p>
                 </div>
 
-                <div class="tech-watch__grid">
-                    <!-- CARTE 1 -->
-                    <div class="tech-watch__card wow fadeIn">
-                        <div class="tech-watch__card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
-                                fill="none">
-                                <path d="M24 4L4 14V24C4 36.327 14.059 46 24 46C33.941 46 44 36.327 44 24V14L24 4Z"
-                                    fill="url(#paint0_linear)" stroke="url(#paint0_linear)" stroke-width="2" />
-                                <defs>
-                                    <linearGradient id="paint0_linear" x1="0" y1="0" x2="48" y2="48"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop offset="0.503125" stop-color="#00ffff" />
-                                        <stop offset="0.982292" stop-color="#009999" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <h3 id="content">
-                            <span class="fr">Frontend</span>
-                        </h3>
-                        <p id="content">
-                            <span class="fr">React, Vue.js, Frameworks CSS modernes</span>
-                        </p>
-                    </div>
 
-                    <!-- CARTE 2 -->
-                    <div class="tech-watch__card wow fadeIn">
-                        <div class="tech-watch__card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
-                                fill="none">
-                                <circle cx="24" cy="24" r="20" fill="none" stroke="url(#paint1_linear)"
-                                    stroke-width="2" />
-                                <path d="M24 14V24L32 28" stroke="url(#paint1_linear)" stroke-width="2"
-                                    stroke-linecap="round" />
-                                <defs>
-                                    <linearGradient id="paint1_linear" x1="0" y1="0" x2="48" y2="48"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop offset="0.503125" stop-color="#00ffff" />
-                                        <stop offset="0.982292" stop-color="#009999" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <h3 id="content">
-                            <span class="fr">Backend</span>
-                        </h3>
-                        <p id="content">
-                            <span class="fr">Node.js, PHP, Architectures Microservices</span>
-                        </p>
-                    </div>
-                </div>
 
 
                 <!-- SECTION ALERTES DYNAMIQUES -->
