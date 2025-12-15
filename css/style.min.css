@@ -425,6 +425,9 @@ body::before {
     pointer-events: none;
     text-decoration: none;
 }
+.header__contact{
+    margin-left: auto;
+}
 
 .header__contact-btn {
     padding: clamp(10px, 2vw, 15px) clamp(30px, 6vw, 72px);
