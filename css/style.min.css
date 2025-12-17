@@ -1135,52 +1135,129 @@ body::before {
     margin-bottom: clamp(30px, 6vw, 60px);
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    border-radius: clamp(8px, 2vw, 12px);
-    padding: clamp(20px, 5vw, 40px);
+/* Presentation Card */
+.presentation-card {
+    margin-bottom: clamp(30px, 6vw, 60px);
+}
+
+/* Container pour la carte flip */
+.card-flip-container {
+    perspective: 1500px;
     width: 100%;
-    max-width: 90%;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-.card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(0, 255, 255, 0.4);
-    box-shadow: 0 8px 32px rgba(0, 255, 255, 0.1);
+/* Carte avec animation flip */
+.card-flip {
+    position: relative;
+    width: 100%;
+    
+    min-height: 600px;
+    transition: transform 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transform-style: preserve-3d;
 }
 
-.card--flex {
+.card-flip-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+
+/* Faces de la carte */
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     display: flex;
-    flex-direction: column;
-    gap: clamp(20px, 4vw, 30px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
 }
 
-@media (min-width: 768px) {
-    .card--flex {
-        flex-direction: row;
-    }
+
+.card-flip-container:hover .card-face--back {
+    box-shadow: 0 25px 70px rgba(17, 153, 142, 0.4);
 }
 
 .card-body {
+    padding: 70px 0 20px 0;
     width: 100%;
-}
-
-@media (min-width: 768px) {
-    .card-body {
-        width: 50%;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-body p {
-    font-size: clamp(14px, 3vw, 18px);
-    line-height: 1.8;
-    color: #e0e0e0;
+    font-size: clamp(15px, 3vw, 18px);
+    line-height: 2;
+    color: #ffffff;
     margin: 0;
+    text-align: justify;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.card-body b {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .card-flip-container {
+        max-width: 90%;
+    }
+    
+    .card-flip {
+        min-height: 520px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-flip {
+        min-height: 580px;
+    }
+    
+    .card-body p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+}
+
+/* Face avant - Noir avec accent cyan */
+.card-face--front {
+    background: linear-gradient(135deg, #19191d 0%, #080b16 100%);
+    padding: clamp(35px, 5vw, 55px);
+    border: 3px solid #122f64;
+}
+
+.card-flip-container:hover .card-face--front {
+    box-shadow: 0 25px 70px rgba(0, 242, 254, 0.3);
+}
+
+/* Face arrière - Bleu nuit avec accent doré */
+.card-face--back {
+    background: linear-gradient(135deg, #031122 0%, #020013 100%);
+    padding: clamp(35px, 5vw, 55px);
+    transform: rotateY(180deg);
+    border: 3px solid #45d6e9;
+}
+
+.card-flip-container:hover .card-face--back {
+    box-shadow: 0 25px 70px rgba(233, 69, 96, 0.3);
+}
+
+.card-img{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    height: 50px;
+}
+
 
 /* Tech Watch */
 .tech-watch {
