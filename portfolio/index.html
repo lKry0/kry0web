@@ -135,7 +135,7 @@
                                     <div class="card-face card-face--front">
                                         <img class="card-img" src="../images/ingetis.png" alt="">
                                         <div class="card-body">
-                                            
+
                                             <p>
                                                 <b>Etudiant chez Ingetis</b>, je me spécialise dans le développement web
                                                 option.
@@ -153,7 +153,7 @@
 
                                     <!-- Face arrière -->
                                     <div class="card-face card-face--back">
-                                          <img class="card-img" src="../images/eco-global.png" alt="">
+                                        <img class="card-img" src="../images/eco-global.png" alt="">
                                         <div class="card-body">
                                             <p>
                                                 J'ai l'opportunité de réaliser une <b>alternance chez ECO Global</b>,
@@ -448,14 +448,14 @@
                     <div class="timeline__item timeline__item--left wow fadeInUp">
                         <div class="timeline__content">
                             <h3 class="timeline__content-title" id="content">
-                                <span class="fr">Missions Variées</span>
+                                <span class="fr">(2020-2026) Developpeur web (ECO GLOBAL) </span>
                             </h3>
                             <p class="timeline__content-subtitle" id="content">
                                 <span class="fr">Full Stack Development</span>
                             </p>
                             <p class="timeline__content-description" id="content">
-                                <span class="fr">Implication dans différents projets incluant frontend et backend en
-                                    alternance et freelance</span>
+                                <span class="fr">Implication dans différents taches incluant frontend et backend en
+                                    dans le cadre d'alternance chez ECO GLOBAL</span>
                             </p>
                         </div>
                     </div>
@@ -577,14 +577,84 @@
                         </div>
                     </div>
 
+                     <div class="portfolio__item wow fadeIn">
+                        <img src="../images/de1c.jpg.png" alt="">
+                        <div class="portfolio__item-content">
+                            <h4 id="content">
+                               DE1C 
+                            </h4>
+                            <p id="content">
+                                <span class="fr">Site MultiPage</span>
+
+                            </p>
+                            <a href="https://de1c.com/" target="_blank" id="content">
+                                <span class="fr">Accéder au site</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <section class="portfolio">
+            <div class="container__fullscreen">
+
+                <h2 class="protfolio__title section__title" id="content">
+                    <span class="fr">Projets académiques & alternance :</span>
+
+                </h2>
+
+                <div class="portfolio__inner">
+                    <div class="portfolio__item wow fadeIn">
+                        <img src="../images/borne.jpg" alt="">
+                        <div class="portfolio__item-content">
+                            <h4 id="content">
+                                Kry0Food
+                            </h4>
+                            <p id="content">
+                                </span>
+                                <span class="fr">Projet lour type borne <br> de restauration </span>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item wow fadeIn">
+                        <img src="../images/glpi.jpg" alt="">
+                        <div class="portfolio__item-content">
+                            <h4 id="content">
+                                EScoot
+                            </h4>
+                            <p id="content">
+                                <span class="fr">GLPI</span>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item wow fadeIn">
+                        <img src="../images/battleships.jpeg" alt="">
+                        <div class="portfolio__item-content">
+                            <h4 id="content">
+                                BattleShips
+                            </h4>
+                            <p id="content">
+                                <span class="fr"> Site - Jeu type : "Bataille navale"</span>
+
+                            </p>
+                            <a href="https://lkry0.github.io/battleships/" target="_blank" id="content">
+                                <span class="fr"> Acceder au site</span>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="portfolio__item wow fadeIn">
                         <img src="../images/eco-global.webp" alt="">
                         <div class="portfolio__item-content">
                             <h4 id="content">
-                                ECO Global
+                               ECO Global (Alternance)
                             </h4>
                             <p id="content">
-                                <span class="fr">Site Multipage</span>
+                                <span class="fr">Site MultiPage</span>
 
                             </p>
                             <a href="https://eco-global.fr/" target="_blank" id="content">
@@ -592,9 +662,12 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
+            </div>
         </section>
+
+
+
         <section class="skills-modern">
             <div class="container">
                 <h2 class="skills-modern__title section__title wow fadeInUp" id="content">
@@ -663,6 +736,7 @@
                             <li id="content"><span class="fr">Figma</span></li>
                             <li id="content"><span class="fr">UI/UX</span></li>
                             <li id="content"><span class="fr">Responsive</span></li>
+                            <li id="content"><span class="fr">Prototypage</span></li>
 
                         </ul>
                     </div>
@@ -680,8 +754,8 @@
                             <span class="fr">Outils</span>
                         </h3>
                         <ul class="skills-modern__card-list">
-                            <li id="content"><span class="fr">Git (+lab / +hub )</span></li>
-                            <li id="content"><span class="fr">VS Code</span></li>
+                            <li id="content"><span class="fr">Git (GitLab / GitHub)</span></li>
+                            <li id="content"><span class="fr">VS Code / Visual Studio</span></li>
                             <li id="content"><span class="fr">WordPress</span></li>
                             <li id="content"><span class="fr">Gulp</span></li>
 
@@ -733,21 +807,34 @@
                         <script>
 
                             (async () => {
+                                try {
+                                    const alertsContainer = document.getElementById('google-alerts');
+                                    if (!alertsContainer) {
+                                        console.warn('google-alerts container not found');
+                                        return;
+                                    }
 
-                                const url = 'https://api.rss2json.com/v1/api.json?rss_url=' +
-                                    encodeURIComponent('https://www.google.fr/alerts/feeds/00551059716221291410/3509189305032843244');
+                                    const url = 'https://api.rss2json.com/v1/api.json?rss_url=' +
+                                        encodeURIComponent('https://www.google.fr/alerts/feeds/00551059716221291410/3509189305032843244');
 
-                                const res = await fetch(url);
-                                const data = await res.json();
+                                    const res = await fetch(url);
+                                    if (!res.ok) {
+                                        throw new Error(`API returned status ${res.status}`);
+                                    }
+                                    const data = await res.json();
 
-                                document.getElementById('google-alerts').innerHTML = data.items.slice(0, 3).map(it => `
-                                <article class="alert-item tech-watch__alert-item">
-                                <a href="${it.link}" target="_blank">${it.title}</a>
-                                <p>${it.description}</p>
-                                <small class="alert-date">${new Date(it.pubDate).toLocaleDateString()}</small>
-                                </article>
-                                `).join('');
-
+                                    if (data.items && Array.isArray(data.items)) {
+                                        alertsContainer.innerHTML = data.items.slice(0, 3).map(it => `
+                                        <article class="alert-item tech-watch__alert-item">
+                                        <a href="${it.link}" target="_blank">${it.title}</a>
+                                        <p>${it.description}</p>
+                                        <small class="alert-date">${new Date(it.pubDate).toLocaleDateString()}</small>
+                                        </article>
+                                        `).join('');
+                                    }
+                                } catch (error) {
+                                    console.error('Error fetching alerts:', error);
+                                }
                             })();
 
                         </script>
