@@ -1492,3 +1492,76 @@ body {
     body { background: white; color: black; }
     .header, .footer, .contact-block, .mobile__contact-btn { display: none; }
 }
+
+/* ============================================================
+   MAIN SECTION — FIX RESPONSIVE
+   ============================================================ */
+.main-section__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70vh;
+}
+
+/* REMPLACER PAR : */
+.main-section__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70vh;
+}
+
+@media (max-width: 900px) {
+    .main-section__inner {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: var(--space-md);
+    }
+}
+
+/* ============================================================
+   BROWSER — FIX RESPONSIVE
+   ============================================================ */
+.browser {
+    grid-column: 2 span;
+}
+
+/* REMPLACER PAR : */
+.browser {
+    grid-column: 2 span;
+}
+
+@media (max-width: 900px) {
+    .browser {
+        grid-column: 1; /* réinitialise le span sur mobile */
+    }
+}
+
+/* ============================================================
+   CARD FLIP — FIX RESPONSIVE (déjà partiellement présent)
+   ============================================================ */
+
+/* Ajouter entre les media queries existantes : */
+@media (max-width: 900px) {
+    .card-flip-container {
+        max-width: 100%;
+        height: auto;
+        min-height: 480px;
+    }
+
+    .card-flip {
+        min-height: 480px;
+    }
+
+    .card-face {
+        position: relative; /* fallback si 3D non supporté */
+    }
+}
+
+@media (max-width: 550px) {
+    .card-flip-container {
+        min-height: 560px;
+    }
+
+    .card-flip {
+        min-height: 560px;
+    }
+}
