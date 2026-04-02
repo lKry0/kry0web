@@ -439,15 +439,7 @@ body {
    BROWSER — RESPONSIVE FIX
    ============================================================ */
 .browser {
-    grid-column: 1; /* annule tout éventuel span résiduel */
     width: 100%;
-}
-
-/* Si le browser est dans une grille parent qui a encore 2 colonnes */
-@supports (grid-template-columns: 1fr 2fr) {
-    .main-section__inner .browser {
-        grid-column: 1; /* occupe la 2e colonne (seule) */
-    }
 }
 
 .browser__wrapper {
